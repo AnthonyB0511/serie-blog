@@ -1,0 +1,61 @@
+@use "../../../assets/styles/mixin" as mixin;
+
+.serie {
+  border-radius: 20px;
+  height: 550px;
+  cursor: pointer;
+
+  position: relative;
+
+  .imgContainer {
+    height: 450px;
+    overflow: hidden;
+
+    img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      width: 100%;
+      transition: 1s transform;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .title {
+    height: 50px;
+    padding: 50px;
+    border: 1px solid var(--gray-2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.2s color;
+    font-size: 20px;
+  }
+
+  .title :not(i) {
+    transition: 0.2s color;
+
+    &:hover {
+      color: var(--error);
+    }
+  }
+}
+
+.delete {
+  position: absolute;
+  color: var(--error);
+  z-index: 10;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+
+  transition: all 0.5s;
+
+  &:hover {
+    color: var(--error);
+    transform: scale(1.5);
+  }
+
+
+}

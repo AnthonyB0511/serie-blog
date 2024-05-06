@@ -1,0 +1,44 @@
+@use "../../assets/styles/mixin.scss" as mixin;
+
+.header {
+    padding: 10px 20px;
+    box-shadow: var(--box-shadow-nav);
+    font-family: var(--font-family);
+
+    i {
+        display: none;
+
+    }
+
+    img {
+        width: 100px;
+        padding: 1%;
+        display: block;
+        position: relative;
+        left: 3%;
+        // transform: translateX(-50%);
+        cursor: pointer;
+    }
+}
+
+.mobileheader {
+    font-size: 1.8rem;
+
+}
+
+@include mixin.xs {
+    .header {
+        img {
+            width: 70px;
+        }
+
+        i {
+            display: block;
+            cursor: pointer;
+        }
+
+        button {
+            display: none;
+        }
+    }
+}

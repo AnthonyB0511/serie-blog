@@ -1,0 +1,24 @@
+.details {
+    h1 {
+        text-align: center;
+        margin-block: 3%;
+
+        span {
+            color: var(--error);
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+
+        img {
+            display: block;
+            width: 30%;
+            margin-right: 50px;
+        }
+    }
+}

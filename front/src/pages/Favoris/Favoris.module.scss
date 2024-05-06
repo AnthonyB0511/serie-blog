@@ -1,0 +1,67 @@
+.favoris {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        text-align: center;
+        margin-block: 15px;
+    }
+
+    ul {
+        width: 35%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .li {
+
+        width: 100%;
+        justify-content: space-between;
+        margin-block: 20px;
+        padding: 10px;
+        border-bottom: 2px solid var(--gray-1);
+        border-radius: 30px;
+
+
+        img {
+            width: 5vw;
+            border-radius: 50%;
+            height: 5vw;
+            margin-right: 15px;
+
+        }
+
+        p {
+
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--gray-1);
+
+        }
+
+        span {
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        button {
+            background-color: white;
+            transition: 0.5s all;
+            border: 2px solid var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+
+
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: red;
+            }
+        }
+    }
+
+}
